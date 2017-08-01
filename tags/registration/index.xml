@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Registration on </title>
+    <link>https://lolefo.github.io/tags/registration/</link>
+    <description>Recent content in Registration on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Loic Le Folgoc</copyright>
+    <lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/registration/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bayesian Medical Image Registration</title>
+      <link>https://lolefo.github.io/project/bayesian-registration/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/project/bayesian-registration/</guid>
+      <description>&lt;p&gt;Here is a &lt;a href=&#34;https://github.com/lolefo/bayesian-registration/blob/master/bayesian-registration.pptx&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt; to my slides on this project, with a high-level walkthrough, videos &amp;amp; results. All of the technical details can be found in these two publications &lt;a href=&#34;../../publication/sbr-fast-registration&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;../../publication/sbr-uq&#34;&gt;there&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project was started while a Ph.D. candidate at Inria &lt;a href=&#34;https://team.inria.fr/asclepios/&#34; target=&#34;_blank&#34;&gt;Asclepios&lt;/a&gt;, under the supervision of Hervé Delingette and Nicholas Ayache.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

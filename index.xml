@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://lolefo.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Loic Le Folgoc</copyright>
+    <lastBuildDate>Wed, 19 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quantifying Registration Uncertainty with Sparse Bayesian Modelling</title>
+      <link>https://lolefo.github.io/publication/sbr-uq/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/publication/sbr-uq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spectral Kernels for Probabilistic Analysis and Clustering of Shapes</title>
+      <link>https://lolefo.github.io/publication/spectral-kernels/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/publication/spectral-kernels/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently presented this work at the &lt;a href=&#34;http://www.ipmi2017.org/workshops&#34; target=&#34;_blank&#34;&gt;IPMI&lt;/a&gt; conference. If you&amp;rsquo;d fancy a high-level walkthrough more than a dry paper, you might be interested in my &lt;a href=&#34;https://github.com/lolefo/spectral-shape-kernels/blob/master/spectral-shape-kernels.pptx&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt; on the project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Medical Image Registration</title>
+      <link>https://lolefo.github.io/project/bayesian-registration/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/project/bayesian-registration/</guid>
+      <description>&lt;p&gt;Here is a &lt;a href=&#34;https://github.com/lolefo/bayesian-registration/blob/master/bayesian-registration.pptx&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt; to my slides on this project, with a high-level walkthrough, videos &amp;amp; results. All of the technical details can be found in these two publications &lt;a href=&#34;../../publication/sbr-fast-registration&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;../../publication/sbr-uq&#34;&gt;there&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project was started while a Ph.D. candidate at Inria &lt;a href=&#34;https://team.inria.fr/asclepios/&#34; target=&#34;_blank&#34;&gt;Asclepios&lt;/a&gt;, under the supervision of Hervé Delingette and Nicholas Ayache.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Structured Sparse Bayesian Modelling for Medical Image Registration</title>
+      <link>https://lolefo.github.io/publication/sbr-fast-registration/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/publication/sbr-fast-registration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://lolefo.github.io/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/talk/example-talk/</guid>
+      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decision Forests for Semantic Image Segmentation</title>
+      <link>https://lolefo.github.io/project/semantic-forests/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/project/semantic-forests/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working on this project as a researcher in the &lt;a href=&#34;https://www.microsoft.com/en-us/research/project/medical-image-analysis/#&#34; target=&#34;_blank&#34;&gt;InnerEye&lt;/a&gt; team at MSR Cambridge, where I develop image processing and machine learning solutions for medical image analysis. The BONSAI framework is a fast CPU-based machine learning C++/C# solution for medical image segmentation tasks, and uses Decision Forests as a building block.&lt;/p&gt;
+
+&lt;p&gt;A surprising limitation of &amp;lsquo;vanilla&amp;rsquo; Decision Forests is that they are not easily capable of semantic reasoning, and BONSAI addresses this in a practical way. Organs of interest in medical images have much structure. They typically deviate in but a few plausible ways from their mean shape. Anomalies might have more complex patterns of variability, but also display obvious structure (they are generally spatially localized). The location of organs relative to each other, or sub-structures within organs, is also variable but constrained.  Hence when trying to make sense of the content of an image, it is natural for us to supplement ambiguous image information with semantic spatial context. If we are confident about assigning a given label to a subset of voxels, it can be used as a powerful cue from which to decide label assignments of neighbouring voxels.&lt;/p&gt;
+
+&lt;p&gt;Vanilla segmentation forests however are only capable of intensity-based contextual reasoning. We introduce semantic reasoning via auto-context, cascading layers of decision forests whose output, along with the raw intensity maps, form the input to subsequent layers. This is possible thanks to the efficiency with which individual layers are trained (seconds to minutes). In particular at each node, the information gain-based feature optimization is replaced with a criterion based on cross-validation estimates of generalization error. This is seamless, fast and yields a natural mechanism to control tree complexity (tree pruning) and generalization.&lt;/p&gt;
+
+&lt;p&gt;Finally, we use a form of guided bagging after initial layers, whereby latent clusters are identified within the training data and cluster-specific subforests are trained. For previously unseen data, cluster assignments are computed and points are tested through their cluster-specific subforest. Clusters are learned in an unsupervised manner from the latent semantics already captured within a previous decision forest layer. Each data point is identified with the collection of tree paths that it traverses, and the decision pathways are clustered. The intuition is that data points will share common semantics whenever clustered together, as they jointly satisfy many predicates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geometry of data, structure, quasi-invariants</title>
+      <link>https://lolefo.github.io/project/geometry-structure-invariants/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/project/geometry-structure-invariants/</guid>
+      <description>&lt;p&gt;Computer science seldom deals with Euclidean data. DNA involves sequences of characters on a 4-letter alphabet, proteins and chemical compounds have graph-like structure. Data can also live on graphs (e.g. individuals as nodes of a social network graph, functional data associated to mesh nodes). Data is complex with non-linear patterns of variability, but it is also highly structured. It is crucial to leverage and learn this structure, whether to do robust inference from few examples or to best make use of large datasets. Sometimes, structure can also be problem specific, and takes the form of &amp;lsquo;quasi-invariances&amp;rsquo; that we wish to enforce in the machine/deep/statistical learning algorithm. This is a growing interest of mine, and something that I have explored in the context of shape analysis.&lt;/p&gt;
+
+&lt;p&gt;Statistical shape analysis involves statistics in non Euclidean spaces. Indeed the pose of an object (translation, orientation) is irrelevant to its shape, and sometimes its scale is also irrelevant to the analysis. Taking pose and/or scale out of the equation without biasing the analysis is challenging, since for all practical purposes we expect data to be somewhat corrupted/noisy. For instance, if objects have been delineated as surface/volumetric meshes from images, or have been reconstructed from point clouds, the resulting mesh representation is only faithful to the true geometry up to some degree of accuracy. In fact, robustness to small random variations in the mesh definition is generally an appealing property for shape analysis algorithms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../publications/spectral-kernels&#34;&gt;Here&lt;/a&gt; and in these &lt;a href=&#34;https://github.com/lolefo/spectral-shape-kernels/blob/master/spectral-shape-kernels.pptx&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt;, the problem is approached from the standpoint of spectral shape analysis and kernel methods. Kernel methods allow to exchange non linear statistics on complex data types for linear statistics on a functional representation of data points. The kernel representation captures the notion of &amp;lsquo;proximity&amp;rsquo; / &amp;lsquo;similarity&amp;rsquo; / &amp;lsquo;alignment&amp;rsquo; that we want to enforce. In the proposed approach we build &amp;lsquo;spectral shape kernels&amp;rsquo; using geometrical invariants derived from spectral analysis. The spectral shape kernels enforce by design the invariance to pose (and scale if desired), and can be tuned to put more emphasis on global shape properties or finer local details, depending on the task and the amount of noise in the data. These ideas can be applied in various settings, including supervised classification, unsupervised clustering and probabilistic analysis of shapes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Structured Sparse Learning</title>
+      <link>https://lolefo.github.io/project/structured-sparse-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/project/structured-sparse-learning/</guid>
+      <description>&lt;p&gt;We are interested in classification and regression tasks (or in fact, generalized linear models) in which the output variables can be well predicted using a small (but unknown) subset of variables among a large candidate set of explanatory variables (or basis functions). Moreover the predicted variables are known to vary &amp;lsquo;smoothly&amp;rsquo; as a function of the input variables. A typical application in medical imaging is to regress activated brain regions in functional MRI. In that case, smooth could be synonymous to &amp;lsquo;contiguous&amp;rsquo;. As for me, the real-world application was to regress sparse multiscale representations of (physically plausible) displacement fields for &lt;a href=&#34;../../publication/sbr-fast-registration&#34;&gt;medical image registration&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We investigate strongly sparse Bayesian priors that combine a structured Gaussian part (the probabilistic counterpart of Tikhonov regularization) and a point mass whenever a variable is &amp;lsquo;inactive&amp;rsquo;. The model relates to Spike-&amp;amp;-Slab and to ARD priors. It generalizes Mike Tipping&amp;rsquo;s sparse Bayesian model of &lt;a href=&#34;http://miketipping.com/sparsebayes.htm&#34; target=&#34;_blank&#34;&gt;RVM&lt;/a&gt;. The RVM (under a specific inference scheme, type-II ML) is also a form of (degenerate) &lt;a href=&#34;https://pdfs.semanticscholar.org/dd2e/9d4f9e94ba57b0d0ed1c2f1b1338ada63d97.pdf&#34; target=&#34;_blank&#34;&gt;sparse Gaussian process&lt;/a&gt;. We pursue two approaches for inference under such models: a generalized variational Bayes (fast) inference scheme (that can be seen as an extension of Tipping&amp;rsquo;s scheme), and a reversible jump (not as fast?) MCMC approach. Interestingly, the former does tend to give good estimates of the mean but as expected, often inconsistent estimates of uncertainty. We looked into the root causes for such behaviour &amp;ndash; it is linked to the choice of variational approximation, which does open future avenues to correct this behaviour within a fast VB inference scheme.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
