@@ -7,8 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Loic Le Folgoc</copyright>
-    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jul 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publication_types/2/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quantifying Registration Uncertainty with Sparse Bayesian Modelling</title>
+      <link>https://lolefo.github.io/publication/sbr-uq/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lolefo.github.io/publication/sbr-uq/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Structured Sparse Bayesian Modelling for Medical Image Registration</title>

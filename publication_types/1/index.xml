@@ -11,15 +11,6 @@
     <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Quantifying Registration Uncertainty with Sparse Bayesian Modelling</title>
-      <link>https://lolefo.github.io/publication/sbr-uq/</link>
-      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://lolefo.github.io/publication/sbr-uq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Spectral Kernels for Probabilistic Analysis and Clustering of Shapes</title>
       <link>https://lolefo.github.io/publication/spectral-kernels/</link>
       <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
